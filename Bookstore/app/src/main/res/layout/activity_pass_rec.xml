@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="280dp"
+        android:layout_height="205dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp">
+
+
+        <TextView
+            android:id="@+id/PassRec_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/PassRec_header"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/EmailToRecover"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/PassRec_header"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name" />
+
+        <Button
+            android:id="@+id/RecoverPasswordButton"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EmailToRecover"
+            android:layout_centerVertical="true"
+            android:text="@string/recover"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

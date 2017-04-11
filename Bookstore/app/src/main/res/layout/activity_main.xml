@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tittle"
+        android:background="@color/background">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/booksStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Księgarnia"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="@color/tittle"
+            android:background="@color/background"
+            android:layout_toRightOf="@+id/logo"/>
+
+        <Spinner
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/booksStore"
+            android:background="@color/white"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false">
+
+         </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header2"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bgsmall">
+
+        <AutoCompleteTextView
+            android:id="@+id/search"
+            android:layout_width="270dp"
+            android:ems="10"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:layout_marginLeft="30dp"
+            android:dropDownVerticalOffset="1.75dp"
+            android:hint="Szukaj..."
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/shead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/header2"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/kat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="KATEGORIE"
+            android:background="@color/background"
+            android:textColor="@color/white"/>
+        <Spinner
+            android:id="@+id/catList"
+            android:layout_below="@+id/kat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false">
+
+        </Spinner>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/header3"
+        android:layout_below="@+id/shead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <TextView
+            android:id="@+id/best"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="BESTSELERY"
+            android:gravity="center"
+            android:background="@color/background"
+            android:textColor="@color/white"/>
+        <ListView
+            android:id="@+id/bestList"
+            android:layout_below="@+id/best"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center">
+        </ListView>
+
+
+        <TextView
+            android:id="@+id/neww"
+            android:layout_below="@+id/bestList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="NOWOŚCI"
+            android:gravity="center"
+            android:background="@color/background"
+            android:textColor="@color/white"/>
+
+        <ListView
+            android:id="@+id/newList"
+            android:layout_below="@+id/neww"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+        </ListView>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

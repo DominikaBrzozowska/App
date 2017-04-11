@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/booksStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Księgarnia"
+            android:layout_centerVertical="true"
+            android:background="@color/background"
+            android:textSize="18dp"
+            android:textColor="@color/tittle"
+            android:layout_toRightOf="@+id/logo"/>
+
+        <Spinner
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/booksStore"
+            android:background="@color/white"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false">
+
+        </Spinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/kat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="KATEGORIE"
+            android:background="@color/background"
+            android:textColor="@color/white"/>
+        <Spinner
+            android:id="@+id/catList"
+            android:layout_below="@+id/kat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/normal"
+        android:layout_below="@+id/shead"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+    <TextView
+        android:id="@+id/catt"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="KATEGORIA: "
+        android:background="@color/background"
+        android:textSize="15dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/catti"
+        android:layout_toRightOf="@+id/catt"
+        android:layout_width="fill_parent"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:background="@color/background"
+        android:textColor="@color/white" />
+
+        <ListView
+            android:id="@+id/catbook"
+            android:layout_below="@+id/catt"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

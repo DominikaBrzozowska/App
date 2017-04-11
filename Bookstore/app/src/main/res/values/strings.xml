@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">TAS</string>
+    <string name="login_header">Logowanie</string>
+    <string name="PassRec_header">Odzyskiwanie hasła</string>
+    <string name="name">e-mail</string>
+    <string name="FirstName">Imie</string>
+    <string name="SecondName">Nazwisko</string>
+    <string name="password_hint">hasło</string>
+    <string name="log_in">zaloguj</string>
+    <string name="send_password">zapomniałem hasła</string>
+    <string name="register">Rejestracja</string>
+    <string name="toregister">Zarejestruj</string>
+    <string name="recover">Odzyskaj</string>
+    <string name="adres">ulica,nr mieszkania</string>
+    <string name="address_less">adres</string>
+    <string name="city">miasto</string>
+    <string name="postal_code">kod pocztowy</string>
+    <string name="no_internet">Brak dostępu do internetu.</string>
+    <string name="server_exception">Bład serwera. Spróbuj ponownie.</string>
+    <string name="io_exception">Bląd sieci. Sprawdź połączenie i spróbuj ponownie.</string>
+
+
+    <string name="user_made_succesfuly">stworzono użytkownika</string>
+    <string name="email_taken">adres email zajęty</string>
+
+
+    <string name="invalid_name">błędne imie</string>
+    <string name="invalid_surname">błędne nazwisko</string>
+    <string name="invalid_email">błędny email</string>
+    <string name="invalid_password">hasło musi zawierać cyfre</string>
+    <string name="invalid_city">błędna nazwa miasta</string>
+    <string name="invalid_address">błędny adres</string>
+    <string name="invalid_postal_code">błędny kod pocztowy</string>
+    <string name="password_recovered">wysłano hasło</string>
+    <string name="wrong_email">błędny email</string>
+    <string name="login_failed">błędne dane logowania</string>
+    <string name="login_succeded">zalogowano poprawnie</string>
+    <string name="basket_is_empty">koszyk jest pusty</string>
+    <string name="not_loged_in">nie jesteś zalogowany</string>
+    <string name="loged_out">wylogowano poprawnie</string>
+    <string name="loged_in">jesteś już zalogowany</string>
+    <string name="order_made">złożono zamówienie</string>
+
+    <string name="but1">rejestracja</string>
+    <string name="but2">logowanie</string>
+    <string name="buy">kup</string>
+
+</resources>

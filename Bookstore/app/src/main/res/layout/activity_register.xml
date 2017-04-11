@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="280dp"
+        android:layout_height="482dp"
+        android:background="@drawable/edittext_bg"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_marginTop="21dp">
+        <TextView
+            android:id="@+id/RegisterHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/register"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/FirstName"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/RegisterHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="@string/FirstName" />
+
+        <EditText
+            android:id="@+id/SecondName"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/FirstName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="@string/SecondName" />
+
+        <EditText
+            android:id="@+id/email"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/SecondName"
+            android:layout_alignLeft="@+id/FirstName"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/password"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/FirstName"
+            android:layout_below="@+id/email"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="@string/password_hint" />
+
+        <EditText
+            android:id="@+id/adres"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/FirstName"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="@string/adres" />
+
+        <EditText
+            android:id="@+id/city"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/FirstName"
+            android:layout_below="@+id/adres"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="@string/city" />
+
+        <EditText
+            android:id="@+id/postal_code"
+            android:background="@+drawable/edittext_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/FirstName"
+            android:layout_below="@+id/city"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="@string/postal_code" />
+        <Button
+            android:id="@+id/RegisterButton"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/postal_code"
+            android:layout_centerVertical="true"
+            android:text="@string/toregister"/>
+    </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
